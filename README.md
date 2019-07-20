@@ -36,6 +36,10 @@
            Report Table
             Schema: UUID, CustomerID, FileName, Size, Word Count, Content-Type, Lines
             File Processor Updates it
+            
+            
+ 6.  Shell Scripts to install database 4 and 5
+            
            
    
    
