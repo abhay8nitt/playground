@@ -1,5 +1,5 @@
 # playground
-
+ All services should be developed in Python 3.7
 
 1. API
    API should put the request in a Database Table and trigger an event in the Kafka Queue
