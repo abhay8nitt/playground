@@ -41,6 +41,7 @@
  6.  Shell Scripts to install database 4 and 5
  
  7. Since we are running 18.04 we have to implement systemd files instead of upstart service scripts.Looks like the user      specifc service files have been discontinued
+ ```
      a) Create /etc/systemd/system/myapp.service
      b) Sample service - [myapp.service]
      
@@ -63,6 +64,7 @@
      e) Check service logs
         journalctl -u myapp
      f) To filter logs one has to write filters   
+  ```   
         
          
          
