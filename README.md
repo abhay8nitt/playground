@@ -39,6 +39,33 @@
             
             
  6.  Shell Scripts to install database 4 and 5
+ 
+ 7. Since we are running 18.04 we have to implement systemd files instead of upstart service scripts.Looks like the user      specifc service files have been discontinued
+     a) Create /etc/systemd/system/myapp.service
+     b) Sample service - [myapp.service]
+     
+         [Unit]
+         Description=myapp
+
+         [Service]
+         ExecStart=/home/user/test.sh
+
+         [Install]
+         WantedBy=multi-user.target
+         
+     c) Systemctl reload will be required
+        systemctl daemon-reload
+     d) Restarting/starting/stopping/status of service
+        sudo systemctl restart myapp
+        sudo systemctl start myapp
+        sudo systemctl stop myapp
+        sudo systemctl status myapp
+     e) Check service logs
+        journalctl -u myapp
+     f) To filter logs one has to write filters   
+        
+         
+         
             
            
    
