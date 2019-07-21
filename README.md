@@ -93,7 +93,31 @@
         
         More context here https://github.com/balabit/syslog-ng/issues/2344
   ```   
-        
+ 
+ # Ubuntu Environment Setup
+   1. Install Ubuntu 16.04
+   2. Install Python 3.7
+      ```
+        sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+        wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
+        tar -xf Python-3.7.3.tar.xz
+        cd Python-3.7.3
+        ./configure --enable-optimizations
+        sudo make altinstall
+        python3.7 -V
+      ``` 
+   3. Install pycharm
+      ```
+      sudo snap install pycharm-community --classic
+      pycharm-community { to open the app ]
+      ```
+   4. Install tilix on Ubuntu - equivalent of iterm
+      ``` 
+      Download: https://www.google.com/url?q=https://github.com/gnunn1/tilix/releases
+      sudo unzip tilix.zip -d /
+      sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+      tilix [ Search for the application ]
+      ```
          
          
             
