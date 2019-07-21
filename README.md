@@ -90,6 +90,8 @@
         filter f_myapp { match("myapp" value("LOGHOST")); };
         destination d_myapp { file("/var/log/myapp/myapp.log"); }; // Need to create a folder myapp in the ant script
         log { source(s_src); filter(f_myapp); destination(d_myapp); };
+        
+        More context here https://github.com/balabit/syslog-ng/issues/2344
   ```   
         
          
